@@ -1,0 +1,26 @@
+{
+  "name": "opticart",
+  "version": "0.1.0",
+  "description": "OptiCart - AI-Powered Multi-Merchant Shopping and Purchase-Optimization Agent",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue.bold,cyan.bold\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "lint": "npm run lint --prefix client && npm run lint --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "opticart",
+    "shopping-optimizer",
+    "ai-agent",
+    "multi-merchant",
+    "e-commerce"
+  ],
+  "author": "OptiCart Team",
+  "license": "MIT"
+}
